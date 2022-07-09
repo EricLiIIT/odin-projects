@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #1f2937;
+  border-spacing: 0;
+  padding: 1em 3em 1em 3em;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav > * {
+  width: 100%;
+}
+
+header div#header {
+  color: #f9faf8;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul.header-links {
+  color: #e5e7eb;
+  list-style: none;
+  font-size: 18px;
+}
+
+header nav ul.header-links li {
+  display: inline-block;
+}
+
+ul li {
+  margin-left: 1em;
+}
