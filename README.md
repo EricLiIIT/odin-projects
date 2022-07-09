@@ -1,2 +1,3 @@
 # odin-recipies
-Projects from the Odin Project. 
+
+Projects from the Odin Project.
