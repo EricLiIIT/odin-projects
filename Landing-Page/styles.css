@@ -39,6 +39,16 @@ ul li {
 
 h1 {
   margin: 0;
+  font-size: 48px;
+  font-weight: extra-bold;
+  color: #f9faf8;
+}
+
+figcaption {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  color: #686868;
 }
 
 .hero {
@@ -53,12 +63,6 @@ h1 {
   max-width: 50%;
 }
 
-h1 {
-  font-size: 48px;
-  font-weight: extra-bold;
-  color: #f9faf8;
-}
-
 .subtext {
   display: block;
   color: #e5e7eb;
@@ -69,7 +73,7 @@ button {
   background-color: #3882f6;
   padding: 0.2em 1.2em 0.2em 1.2em;
   color: white;
-  border-radius: 0.5em;
+  border-radius: 0.3em;
   border: none;
 }
 
@@ -85,9 +89,6 @@ button {
   height: 100%;
 }
 
-section.information {
-}
-
 div.pic {
   border: solid;
   border-color: #3882f6;
@@ -96,6 +97,16 @@ div.pic {
   height: 100px;
 }
 
-.information figure {
+.picture-container figure {
   display: inline-block;
+}
+
+#information {
+  display: flex;
+  justify-content: center;
+}
+
+.information-container {
+  display: flex;
+  justify-content: center;
 }
