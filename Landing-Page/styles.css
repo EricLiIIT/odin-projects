@@ -84,3 +84,18 @@ button {
   width: 100%;
   height: 100%;
 }
+
+section.information {
+}
+
+div.pic {
+  border: solid;
+  border-color: #3882f6;
+  border-radius: 0.6em;
+  width: 100px;
+  height: 100px;
+}
+
+.information figure {
+  display: inline-block;
+}
