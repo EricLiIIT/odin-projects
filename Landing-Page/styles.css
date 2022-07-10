@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 0em;
   font-family: "Montserrat", sans-serif;
   font-family: "Roboto", sans-serif;
 }
@@ -8,7 +8,7 @@ body {
 header {
   background-color: #1f2937;
   border-spacing: 0;
-  padding: 1em 15em 1em 15em;
+  padding: 1em 30em 1em 30em;
   display: flex;
   align-items: center;
 }
@@ -20,7 +20,7 @@ nav {
 header div#header {
   color: #f9faf8;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 header nav ul.header-links {
@@ -40,7 +40,7 @@ ul li {
 h1 {
   margin: 0;
   font-size: 48px;
-  font-weight: extra-bold;
+  font-weight: bolder;
   color: #f9faf8;
 }
 
@@ -49,11 +49,13 @@ figcaption {
   display: flex;
   justify-content: center;
   color: #686868;
+  max-width: 120px;
+  text-align: center;
 }
 
 .hero {
   background-color: #1f2937;
-  padding: 1em 15em 1em 15em;
+  padding: 1em 30em 1em 30em;
   display: flex;
   padding-bottom: 5em;
 }
@@ -93,8 +95,8 @@ div.pic {
   border: solid;
   border-color: #3882f6;
   border-radius: 0.6em;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
 }
 
 .picture-container figure {
@@ -104,9 +106,52 @@ div.pic {
 #information {
   display: flex;
   justify-content: center;
+  margin-top: 1em;
 }
 
 .information-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 3em;
+}
+
+.quote {
+  background-color: #e5e7eb;
+  padding: 2em 18em 2em 18em;
+  font-style: italic;
+  font-size: 36px;
+  color: #1f2937;
+}
+
+blockquote {
+  margin: 0;
+}
+
+section.quote figcaption#who-said-it {
+  max-width: 100%;
+  justify-content: end;
+  font-size: 18px;
+  font-style: bold;
+  white-space: nowrap;
+}
+
+.call-to-action {
+  background-color: #3882f6;
+  color: white;
+  display: flex;
+  margin: 5em 14em 5em 14em;
+  border-radius: 0.5em;
+}
+
+section.call-to-action div {
+  max-width: 80%;
+}
+
+footer {
+  background-color: #1f2937;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
