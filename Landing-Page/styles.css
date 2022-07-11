@@ -63,10 +63,6 @@ figcaption {
   margin: auto;
 }
 
-#hero1 {
-  display: inline-block;
-}
-
 .subtext {
   display: block;
   color: #e5e7eb;
@@ -85,6 +81,9 @@ button {
   background-color: grey;
   width: 100%;
   margin-left: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .placeholder-image#image {
@@ -163,10 +162,6 @@ section.quote figcaption#who-said-it {
   border-radius: 0.5em;
 }
 
-/* section.call-to-action-container div {
-  max-width: 60%;
-} */
-
 #call-to-action {
   margin-left: 5em;
 }
@@ -179,6 +174,20 @@ section.call-to-action-container div p {
   margin-top: 0;
 }
 
+#sign-up {
+  display: flex;
+  margin: auto;
+}
+
+#sign-up button {
+  background-color: #3882f6;
+  padding: 0.2em 1.2em 0.2em 1.2em;
+  border-style: solid;
+  border-radius: 0.3em;
+  border-width: 0.1em;
+  border-color: white;
+}
+
 /* FOOTER */
 
 footer {
@@ -186,6 +195,6 @@ footer {
   color: white;
   font-size: 12px;
   text-align: center;
-  padding-top: 1em;
-  padding-bottom: 2em;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
