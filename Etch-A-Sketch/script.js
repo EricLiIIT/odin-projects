@@ -1,9 +1,7 @@
-window.addEventListener("DOMContentLoaded", (event) => {
+const loadGrid = () => {
   const gridHeight = 16;
   const gridWidth = 16;
 
-  console.log("DOM conent loaded");
-  // document.getElementById("grid-container").appendChild(div);
   for (let i = 0; i < gridHeight; i++) {
     let gridRow = document.createElement("div");
     gridRow.className = "grid-row";
@@ -13,12 +11,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
       gridCell.className = "grid-cell";
       gridRow.appendChild(gridCell);
     }
-    // Append row after adding grid squares,
-    // not before (then adding grid squares once
-    // the row has been added to the dom)
+    // Render one filled row at a time
     document.getElementById("grid-container").appendChild(gridRow);
   }
+};
 
+const loadCellHoverEffect = () => {
   let gridCell = document.querySelectorAll(".grid-cell");
   gridCell.forEach((cell) => {
     cell.addEventListener("mouseover", (event) => {
@@ -28,4 +26,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
       cell.style.backgroundColor = "white";
     });
   });
+};
+
+window.addEventListener("DOMContentLoaded", (event) => {
+  loadGrid();
+  loadCellHoverEffect();
 });
