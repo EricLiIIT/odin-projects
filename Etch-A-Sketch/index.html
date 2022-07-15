@@ -11,12 +11,22 @@
 </head>
 
 <body>
-  <div id="grid-container"></div>
-  <!-- <div id="grid-property-control">
-    <div>
-      <input type="text" id="grid-size">
+  <div id="etch-a-sketch">
+    <div id="grid-container"></div>
+    <!-- <div class="knob" id="knob-left"></div>
+    <div class="knob" id="knob-right"></div> -->
+    <div id="controls">
+      <label for="grid-size">Select Grid Size:</label>
+      <select name="grid-size" id="grid-size">
+        <option value="8">8 Pixels</option>
+        <option value="16">16 Pixels</option>
+        <option value="32">32 Pixels</option>
+        <option value="64">64 Pixels</option>
+        <option value="128">128 Pixels</option>
+      </select>
+      <button id="clear-button">Clear Grid</button>
     </div>
-  </div> -->
+  </div>
 </body>
 
 </html>

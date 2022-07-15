@@ -1,4 +1,4 @@
-const loadGrid = () => {
+const renderGrid = () => {
   const gridHeight = 16;
   const gridWidth = 16;
 
@@ -16,19 +16,32 @@ const loadGrid = () => {
   }
 };
 
-const loadCellHoverEffect = () => {
-  let gridCell = document.querySelectorAll(".grid-cell");
-  gridCell.forEach((cell) => {
+const renderCellHoverEffect = () => {
+  let gridCells = document.querySelectorAll(".grid-cell");
+  gridCells.forEach((cell) => {
     cell.addEventListener("mouseover", (event) => {
       cell.style.backgroundColor = "grey";
     });
-    cell.addEventListener("mouseout", (event) => {
+    // cell.addEventListener("mouseout", (event) => {
+    //   cell.style.backgroundColor = "white";
+    // });
+  });
+};
+
+const clearGrid = () => {
+  let clearButton = document.getElementById("clear-button");
+  console.log(clearButton);
+  let gridCells = document.querySelectorAll(".grid-cell");
+  clearButton.addEventListener("click", (event) => {
+    console.log("button press");
+    gridCells.forEach((cell) => {
       cell.style.backgroundColor = "white";
     });
   });
 };
 
 window.addEventListener("DOMContentLoaded", (event) => {
-  loadGrid();
-  loadCellHoverEffect();
+  renderGrid();
+  renderCellHoverEffect();
+  clearGrid();
 });

@@ -1,14 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  min-height: 98vh;
+  border-style: solid;
+  border-color: red;
+}
+
+#etch-a-sketch {
+  border-style: solid;
+  border-color: red;
+  padding: 10% 30% 10% 30%;
+}
+
 #grid-container {
   padding: 1em;
-  position: fixed;
+  /* position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   border-style: solid;
 }
 
 .grid-row {
-  min-width: 480px;
+  min-width: 447.8px;
 }
 
 .grid-cell {
@@ -17,5 +33,24 @@
   width: 20px;
   border-style: solid;
   border-color: black;
-  margin-right: 5px;
+  margin-right: 3px;
+}
+
+.knob {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  border-style: solid;
+  border-color: black;
+  border-radius: 50%;
+}
+
+#knob-left {
+  bottom: 70px;
+  right: 70px;
+}
+
+#knob-right {
+  bottom: 70px;
+  left: 70px;
 }
