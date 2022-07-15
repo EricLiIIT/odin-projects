@@ -20,7 +20,7 @@ const loadCellHoverEffect = () => {
   let gridCell = document.querySelectorAll(".grid-cell");
   gridCell.forEach((cell) => {
     cell.addEventListener("mouseover", (event) => {
-      cell.style.backgroundColor = "cyan";
+      cell.style.backgroundColor = "grey";
     });
     cell.addEventListener("mouseout", (event) => {
       cell.style.backgroundColor = "white";
