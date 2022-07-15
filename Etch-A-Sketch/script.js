@@ -9,21 +9,23 @@ window.addEventListener("DOMContentLoaded", (event) => {
     gridRow.className = "grid-row";
     gridRow.style.display = "block";
     for (let i = 0; i < gridWidth; i++) {
-      let gridSquare = document.createElement("div");
-      gridRow.appendChild(gridSquare);
-      gridSquare.style.display = "inline-block";
-      gridSquare.style.width = "20px";
-      gridSquare.style.height = "20px";
-      gridSquare.style.borderStyle = "solid";
-      gridSquare.style.borderColor = "black";
-      // gridSquare.style.backgroundColor = "Blue";
-      gridSquare.style.marginRight = "5px";
+      let gridCell = document.createElement("div");
+      gridCell.className = "grid-cell";
+      gridRow.appendChild(gridCell);
     }
     // Append row after adding grid squares,
     // not before (then adding grid squares once
     // the row has been added to the dom)
-    document.body.appendChild(gridRow);
+    document.getElementById("grid-container").appendChild(gridRow);
   }
-  // div.style.height = gridHeight;
-  // div.style.width = gridWidth;
+
+  let gridCell = document.querySelectorAll(".grid-cell");
+  gridCell.forEach((cell) => {
+    cell.addEventListener("mouseover", (event) => {
+      cell.style.backgroundColor = "cyan";
+    });
+    cell.addEventListener("mouseout", (event) => {
+      cell.style.backgroundColor = "white";
+    });
+  });
 });
