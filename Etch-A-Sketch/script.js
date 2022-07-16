@@ -5,7 +5,7 @@ const renderGrid = () => {
   for (let i = 0; i < gridHeight; i++) {
     let gridRow = document.createElement("div");
     gridRow.className = "grid-row";
-    gridRow.style.display = "block";
+
     for (let i = 0; i < gridWidth; i++) {
       let gridCell = document.createElement("div");
       gridCell.className = "grid-cell";
@@ -20,7 +20,7 @@ const renderCellHoverEffect = () => {
   let gridCells = document.querySelectorAll(".grid-cell");
   gridCells.forEach((cell) => {
     cell.addEventListener("mouseover", (event) => {
-      cell.style.backgroundColor = "grey";
+      cell.style.backgroundColor = "black";
     });
     // cell.addEventListener("mouseout", (event) => {
     //   cell.style.backgroundColor = "white";
@@ -30,10 +30,9 @@ const renderCellHoverEffect = () => {
 
 const clearGrid = () => {
   let clearButton = document.getElementById("clear-button");
-  console.log(clearButton);
   let gridCells = document.querySelectorAll(".grid-cell");
+
   clearButton.addEventListener("click", (event) => {
-    console.log("button press");
     gridCells.forEach((cell) => {
       cell.style.backgroundColor = "white";
     });
