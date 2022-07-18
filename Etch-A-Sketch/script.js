@@ -19,6 +19,8 @@ const renderGrid = (gridSize) => {
     // Render one filled row at a time
     document.getElementById("grid-container").appendChild(gridRow);
   }
+  renderCellHoverEffect();
+  clearGrid();
 };
 
 const renderCellHoverEffect = () => {
