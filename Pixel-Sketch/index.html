@@ -20,17 +20,21 @@
   </div>
 
   <div id="control-panel">
-    <label for="grid-size">Grid Size:</label>
-    <select name="grid-size" id="grid-size">
-      <option value="8">8 Pixels</option>
-      <option value="16">16 Pixels</option>
-      <option value="32">32 Pixels</option>
-      <option value="64">64 Pixels</option>
-    </select>
-    <button id="toggle-button">
-      Toggle Grid
-    </button>
-    <button id="clear-button">Clear Grid</button>
+    <div class="slider">
+      <div id="pixel-count">8</div>
+      <input type="range" min="1" max="32" step="1" class="slider-input" id="grid-size" />
+      <div id="grid-size-label">
+        <label for="grid-size">Grid Size</label>
+      </div>
+    </div>
+    <div>
+      <button id="toggle-button">
+        Toggle Grid
+      </button>
+    </div>
+    <div>
+      <button id="clear-button">Clear Grid</button>
+    </div>
   </div>
   <script type=text/javascript src="./script.js"></script>
 </body>

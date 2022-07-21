@@ -10,6 +10,26 @@ h1 {
   margin-bottom: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
+input.slider-input {
+  cursor: pointer;
+}
+
+#pixel-count {
+  text-align: center;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
 #pixel-sketch {
   display: flex;
   flex-direction: column;
@@ -28,12 +48,10 @@ h1 {
 }
 
 #control-panel {
-  display: block;
-  margin: auto;
+  display: flex;
   margin-top: 1em;
   border-style: solid;
   border-color: orange;
-  height: 75px;
 }
 
 @media only screen and (max-width: 767px) {

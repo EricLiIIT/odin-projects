@@ -56,7 +56,7 @@ window.addEventListener("DOMContentLoaded", () => {
       cell.style.borderStyle = "solid";
       cell.style.borderWidth = "0.001em";
     });
-  };
+  }; // move elsewhere?
 
   loadGridLines();
 
@@ -67,10 +67,12 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   const selectGridSize = document.getElementById("grid-size");
-  selectGridSize.addEventListener("change", () => {
-    console.log(selectGridSize.value, "px");
-    renderGrid(selectGridSize.value);
+  selectGridSize.addEventListener("input", () => {
+    let gridSize = selectGridSize.value;
+    document.getElementById("pixel-count").textContent = gridSize;
+    renderGrid(gridSize);
     loadGridLines();
+    console.log("Grid Size: ", gridSize, "px ct");
   });
 
   const toggleButton = document.getElementById("toggle-button");
