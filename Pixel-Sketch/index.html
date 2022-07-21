@@ -17,25 +17,20 @@
   </header>
   <div id="pixel-sketch">
     <div id="grid-container"></div>
-    <!-- <div id="knob-container"></div> -->
   </div>
 
   <div id="control-panel">
-    <label for="grid-size">Select Grid Size:</label>
+    <label for="grid-size">Grid Size:</label>
     <select name="grid-size" id="grid-size">
       <option value="8">8 Pixels</option>
       <option value="16">16 Pixels</option>
       <option value="32">32 Pixels</option>
       <option value="64">64 Pixels</option>
     </select>
-    <div>
-      <button id="grid-toggle-button">
-        Grid On
-      </button>
-    </div>
-    <div>
-      <button id="clear-button">Clear Grid</button>
-    </div>
+    <button id="toggle-button">
+      Toggle Grid
+    </button>
+    <button id="clear-button">Clear Grid</button>
   </div>
   <script type=text/javascript src="./script.js"></script>
 </body>

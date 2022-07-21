@@ -45,10 +45,20 @@ const removeLastGrid = () => {
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-  const initalGridSize = 64;
+  const initalGridSize = 8;
 
   renderGrid(initalGridSize);
   renderCellHoverEffect();
+
+  let loadGridLines = () => {
+    let gridCells = document.querySelectorAll(".grid-cell");
+    gridCells.forEach((cell) => {
+      cell.style.borderStyle = "solid";
+      cell.style.borderWidth = "0.001em";
+    });
+  };
+
+  loadGridLines();
 
   const clearButton = document.getElementById("clear-button");
   clearButton.addEventListener("click", () => {
@@ -60,22 +70,23 @@ window.addEventListener("DOMContentLoaded", () => {
   selectGridSize.addEventListener("change", () => {
     console.log(selectGridSize.value, "px");
     renderGrid(selectGridSize.value);
+    loadGridLines();
   });
 
-  const toggleButton = document.getElementById("grid-toggle-button");
+  const toggleButton = document.getElementById("toggle-button");
   toggleButton.addEventListener("click", () => {
     let gridCells = document.querySelectorAll(".grid-cell");
+
     gridCells.forEach((cell) => {
       if (cell.style.borderStyle == "" || cell.style.borderStyle == "solid") {
         cell.style.border = "none";
-        toggleButton.textContent = "Grid Off";
       } else if (cell.style.borderStyle == "none") {
         cell.style.borderStyle = "solid";
         cell.style.borderWidth = "0.001em";
-        toggleButton.textContent = "Turn off grid";
       }
     });
   });
 });
 
+// add color picker function
 // add a save to pc function somewhere
