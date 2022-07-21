@@ -45,7 +45,7 @@ const removeLastGrid = () => {
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-  const initalGridSize = 8;
+  const initalGridSize = 64;
 
   renderGrid(initalGridSize);
   renderCellHoverEffect();

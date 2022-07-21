@@ -1,3 +1,67 @@
+@media only screen and (max-width: 767px) {
+  #grid-container {
+    width: 350px;
+    height: 350px;
+  }
+
+  .grid-cell {
+    border-style: solid;
+    border-width: 0.00001em;
+    border-color: black;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #grid-container {
+    width: 450px;
+    height: 450px;
+  }
+
+  .grid-cell {
+    border-style: solid;
+    border-width: 0.00001em;
+    border-color: black;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #pixel-sketch {
+    margin-top: 0.7em;
+  }
+
+  #grid-container {
+    /* For including knob container */
+    /* margin-bottom: 0; */
+    background-color: pink;
+    width: 700px;
+    height: 700px;
+  }
+
+  .grid-cell {
+    border-style: solid;
+    border-width: 0.001em;
+  }
+
+  #knob-container {
+    margin: auto;
+    margin-top: 0;
+    border-style: solid;
+    border-color: pink;
+    height: 75px;
+    width: 500px;
+  }
+
+  #control-panel {
+    display: block;
+    margin: auto;
+    /* margin-top: 1em; */
+    border-style: solid;
+    border-color: orange;
+    height: 75px;
+    width: 500px;
+  }
+}
+
 body {
   background-color: #9efff5;
   display: flex;
@@ -27,80 +91,4 @@ h1 {
   border-style: solid;
   border-width: 0.001em;
   background-color: #9efff5;
-}
-
-@media only screen and (min-width: 1024px) {
-  #pixel-sketch {
-    margin-top: 0.7em;
-    /* width: 500px;
-    height: 500px; */
-  }
-
-  #grid-container {
-    /* For including knob container */
-    /* margin-bottom: 0; */
-    background-color: pink;
-    width: 600px;
-    height: 600px;
-  }
-
-  .grid-cell {
-    border-style: solid;
-    border-width: 0.001em;
-  }
-
-  #knob-container {
-    margin: auto;
-    margin-top: 0;
-    border-style: solid;
-    border-color: pink;
-    height: 75px;
-    width: 500px;
-  }
-
-  #control-panel {
-    display: block;
-    margin: auto;
-    /* margin-top: 1em; */
-    border-style: solid;
-    border-color: orange;
-    height: 75px;
-    width: 500px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #pixel-sketch {
-    width: 500px;
-    height: 500px;
-  }
-
-  #grid-container {
-    width: 450px;
-    height: 450px;
-  }
-
-  .grid-cell {
-    border-style: solid;
-    border-width: 0.00001em;
-    border-color: black;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  #pixel-sketch {
-    width: 400px;
-    height: 400px;
-  }
-
-  #grid-container {
-    width: 350px;
-    height: 350px;
-  }
-
-  .grid-cell {
-    border-style: solid;
-    border-width: 0.00001em;
-    border-color: black;
-  }
 }
