@@ -42,8 +42,6 @@ const removeLastGrid = () => {
   grid.remove();
 };
 
-const selectGridSize = () => {};
-
 window.addEventListener("DOMContentLoaded", () => {
   const initalGridSize = 8;
 
@@ -60,6 +58,21 @@ window.addEventListener("DOMContentLoaded", () => {
   selectGridSize.addEventListener("change", () => {
     console.log(selectGridSize.value, "px");
     renderGrid(selectGridSize.value);
+  });
+
+  const toggleButton = document.getElementById("grid-toggle-button");
+  toggleButton.addEventListener("click", () => {
+    let gridCells = document.querySelectorAll(".grid-cell");
+    gridCells.forEach((cell) => {
+      if (cell.style.borderStyle == "" || cell.style.borderStyle == "solid") {
+        cell.style.border = "none";
+        toggleButton.textContent = "Grid Off";
+      } else if (cell.style.borderStyle == "none") {
+        cell.style.borderStyle = "solid";
+        cell.style.borderWidth = "0.001em";
+        toggleButton.textContent = "Turn off grid";
+      }
+    });
   });
 });
 
