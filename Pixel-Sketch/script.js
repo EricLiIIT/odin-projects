@@ -1,3 +1,5 @@
+const AQUABLUE = "#9efff5";
+
 const renderGrid = (gridSize) => {
   removeLastGrid();
   const pixelSketch = document.getElementById("pixel-sketch");
@@ -24,7 +26,7 @@ const renderGrid = (gridSize) => {
 
 const clearGrid = (gridCells) => {
   gridCells.forEach((cell) => {
-    cell.style.backgroundColor = "orange";
+    cell.style.backgroundColor = AQUABLUE;
   });
 };
 
@@ -32,7 +34,7 @@ const renderCellHoverEffect = () => {
   let gridCells = document.querySelectorAll(".grid-cell");
   gridCells.forEach((cell) => {
     cell.addEventListener("mouseover", () => {
-      cell.style.backgroundColor = "black";
+      cell.style.backgroundColor = "pink";
     });
   });
 };
