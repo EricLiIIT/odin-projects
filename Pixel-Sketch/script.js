@@ -39,7 +39,13 @@ window.addEventListener("DOMContentLoaded", () => {
     }
     let gridCells = document.querySelectorAll(".grid-cell");
     gridCells.forEach((cell) => {
-      cell.addEventListener("mouseover", () => {
+      cell.addEventListener("mouseover", (event) => {
+        if (event.buttons == 1) {
+          cell.style.backgroundColor = selectedColor;
+        }
+      });
+      cell.addEventListener("click", (event) => {
+        console.log("clicked");
         cell.style.backgroundColor = selectedColor;
       });
     });
@@ -107,3 +113,4 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 // add a save to pc function somewhere (maybe need to use canvas?)
+// only allow drawing when holding mouse
