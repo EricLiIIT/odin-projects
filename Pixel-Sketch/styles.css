@@ -1,9 +1,11 @@
 body {
-  background-color: #9efff5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #ededed;
+  font-family: "Edu QLD Beginner", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -12,10 +14,16 @@ h1 {
 
 button {
   cursor: pointer;
+  font-family: "Edu QLD Beginner", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 input.slider-input {
   cursor: pointer;
+}
+
+.button {
+  margin: auto;
 }
 
 #pixel-count {
@@ -36,6 +44,7 @@ input.slider-input {
   justify-content: center;
   align-items: center;
   margin-top: 1.5em;
+  background-color: #ff8a60;
 }
 
 #grid-container {
