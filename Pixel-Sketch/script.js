@@ -30,11 +30,11 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  const renderCellHoverEffect = () => {
+  const renderCellHoverEffect = (selectedColor) => {
     let gridCells = document.querySelectorAll(".grid-cell");
     gridCells.forEach((cell) => {
       cell.addEventListener("mouseover", () => {
-        cell.style.backgroundColor = selectColor;
+        cell.style.backgroundColor = selectedColor;
       });
     });
   };
@@ -63,15 +63,18 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  const selectColor = () => {
-    const colorPicker = document.getElementById("color-input");
-    let selectedColor = colorPicker.value;
-    console.log(typeof selectedColor);
-    return selectedColor;
-  };
-
   // Previous content load
   const initalGridSize = 16;
+
+  const colorPicker = document.getElementById("color-input");
+  let selectedColor = colorPicker.value;
+
+  colorPicker.addEventListener("input", () => {
+    selectedColor = colorPicker.value;
+    console.log(selectedColor);
+    renderCellHoverEffect(selectedColor);
+  });
+
   renderGrid(initalGridSize);
   loadGridLines();
 
@@ -95,9 +98,6 @@ window.addEventListener("DOMContentLoaded", () => {
     let gridCells = document.querySelectorAll(".grid-cell");
     toggleGrid(gridCells);
   });
-
-  const colorPicker = document.getElementById("color-input");
-  colorPicker.addEventListener("change", selectColor);
 });
 
 // add a save to pc function somewhere (maybe need to use canvas?)
