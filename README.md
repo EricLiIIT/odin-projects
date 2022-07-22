@@ -1,6 +1,6 @@
 # Odin Projects
 
-Projects from the Odin Project.
+Work from the Odin Project:
 
 ### [Landing Page Template](https://ericliiit.github.io/odin-projects/Landing-Page)
 
