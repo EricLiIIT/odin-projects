@@ -31,6 +31,9 @@ window.addEventListener("DOMContentLoaded", () => {
   };
 
   const renderCellHoverEffect = (selectedColor) => {
+    if (selectedColor == undefined) {
+      selectedColor = "#000000";
+    }
     let gridCells = document.querySelectorAll(".grid-cell");
     gridCells.forEach((cell) => {
       cell.addEventListener("mouseover", () => {
