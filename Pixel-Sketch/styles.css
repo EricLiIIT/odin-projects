@@ -81,9 +81,11 @@ input {
     width: 350px;
     height: 350px;
   }
+
   #control-panel {
     display: block;
   }
+
   .input {
     text-align: center;
     margin-top: 0.5em;
