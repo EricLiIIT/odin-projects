@@ -25,6 +25,7 @@ input.slider-input {
 
 .button {
   margin: auto;
+  padding-left: 1em;
 }
 
 #pixel-count {
@@ -60,8 +61,10 @@ input.slider-input {
 #control-panel {
   display: flex;
   margin-top: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
   border-style: solid;
-  border-width: 0.2em;
+  border-width: 2.5px;
   border-color: black;
 }
 
@@ -71,9 +74,9 @@ input.slider-input {
     height: 350px;
   }
 
-  #control-panel {
+  /* #control-panel {
     width: 250px;
-  }
+  } */
 }
 
 @media only screen and (min-width: 768px) {
@@ -82,9 +85,9 @@ input.slider-input {
     height: 450px;
   }
 
-  #control-panel {
+  /* #control-panel {
     width: 300px;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1024px) {
@@ -93,7 +96,7 @@ input.slider-input {
     height: 550px;
   }
 
-  #control-panel {
+  /* #control-panel {
     width: 500px;
-  }
+  } */
 }
