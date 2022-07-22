@@ -57,6 +57,7 @@ input {
 #control-panel {
   display: flex;
   margin-top: 1.5em;
+  margin-bottom: 1em;
   padding-left: 1em;
   padding-right: 1em;
   border-style: solid;
@@ -64,10 +65,30 @@ input {
   border-color: black;
 }
 
+#icon-ref {
+  padding-left: calc(100vw - 100%);
+  text-align: center;
+  font-size: 0.7em;
+  background-color: #ededed;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 @media only screen and (max-width: 767px) {
   #grid-container {
     width: 350px;
     height: 350px;
+  }
+  #control-panel {
+    display: block;
+  }
+  .input {
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-left: 0;
   }
 }
 
