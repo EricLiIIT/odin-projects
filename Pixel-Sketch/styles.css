@@ -19,11 +19,11 @@ button {
   font-family: "Montserrat", sans-serif;
 }
 
-input.slider-input {
+input {
   cursor: pointer;
 }
 
-.button {
+.input {
   margin: auto;
   padding-left: 1em;
 }
@@ -73,10 +73,6 @@ input.slider-input {
     width: 350px;
     height: 350px;
   }
-
-  /* #control-panel {
-    width: 250px;
-  } */
 }
 
 @media only screen and (min-width: 768px) {
@@ -84,10 +80,6 @@ input.slider-input {
     width: 450px;
     height: 450px;
   }
-
-  /* #control-panel {
-    width: 300px;
-  } */
 }
 
 @media only screen and (min-width: 1024px) {
@@ -95,8 +87,4 @@ input.slider-input {
     width: 550px;
     height: 550px;
   }
-
-  /* #control-panel {
-    width: 500px;
-  } */
 }
