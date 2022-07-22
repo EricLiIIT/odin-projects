@@ -21,7 +21,10 @@ window.addEventListener("DOMContentLoaded", () => {
       cell.style.backgroundColor = "white";
       gridContainer.appendChild(cell);
     }
-    renderCellHoverEffect();
+    // After changing grid size, this keeps the color selected
+    const colorPicker = document.getElementById("color-input");
+    let selectedColor = colorPicker.value;
+    renderCellHoverEffect(selectedColor);
   };
 
   const clearGrid = (gridCells) => {
@@ -74,7 +77,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   colorPicker.addEventListener("input", () => {
     selectedColor = colorPicker.value;
-    console.log(selectedColor);
+    console.log("Selected Color: ", selectedColor);
     renderCellHoverEffect(selectedColor);
   });
 
